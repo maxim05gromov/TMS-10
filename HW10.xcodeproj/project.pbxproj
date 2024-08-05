@@ -13,6 +13,8 @@
 		81032FD32C56E3DD007C5832 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 81032FD22C56E3DD007C5832 /* Base */; };
 		81032FD52C56E3DE007C5832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81032FD42C56E3DE007C5832 /* Assets.xcassets */; };
 		81032FD82C56E3DE007C5832 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 81032FD72C56E3DE007C5832 /* Base */; };
+		81032FE02C56E517007C5832 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81032FDF2C56E517007C5832 /* SecondViewController.swift */; };
+		81032FE32C57F6B7007C5832 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81032FE22C57F6B7007C5832 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		81032FD42C56E3DE007C5832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81032FD72C56E3DE007C5832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81032FD92C56E3DE007C5832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81032FDF2C56E517007C5832 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81032FE32C57F6B7007C5832 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				81032FCB2C56E3DD007C5832 /* AppDelegate.swift */,
 				81032FCD2C56E3DD007C5832 /* SceneDelegate.swift */,
 				81032FCF2C56E3DD007C5832 /* ViewController.swift */,
+				81032FDF2C56E517007C5832 /* SecondViewController.swift */,
 				81032FD12C56E3DD007C5832 /* Main.storyboard */,
 				81032FD42C56E3DE007C5832 /* Assets.xcassets */,
 				81032FD62C56E3DE007C5832 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = HW10;
+			packageProductDependencies = (
+				81032FE22C57F6B7007C5832 /* SnapKit */,
+			);
 			productName = HW10;
 			productReference = 81032FC82C56E3DD007C5832 /* HW10.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 81032FBF2C56E3DD007C5832;
+			packageReferences = (
+				81032FE12C57F6B7007C5832 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 81032FC92C56E3DD007C5832 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81032FE02C56E517007C5832 /* SecondViewController.swift in Sources */,
 				81032FD02C56E3DD007C5832 /* ViewController.swift in Sources */,
 				81032FCC2C56E3DD007C5832 /* AppDelegate.swift in Sources */,
 				81032FCE2C56E3DD007C5832 /* SceneDelegate.swift in Sources */,
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81032FE12C57F6B7007C5832 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81032FE22C57F6B7007C5832 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81032FE12C57F6B7007C5832 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81032FC02C56E3DD007C5832 /* Project object */;
 }
